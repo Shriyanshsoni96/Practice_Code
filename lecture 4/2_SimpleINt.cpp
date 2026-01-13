@@ -1,9 +1,8 @@
 #include<iostream>
-#include<math.h>
 using namespace std;
 int main(){
-float p,r,t,ci,amount;
+float p,r,t,si,amount;
 cin>>p>>r>>t;
-int SI=(p*r*t)/100;
-cout<<SI;
+si=(p*r*t)/100;
+cout<<si;
 }
