@@ -34,13 +34,7 @@ while(i>=1)
     j--;
  }
    
-
-  //ye short wala he 
- 
-    
-     
-
-  int k =2*i-1 ;
+ int k =2*i-1 ;
       while(k>=1)
       {
         cout<<" *";
