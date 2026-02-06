@@ -42,8 +42,8 @@
 			"typeName": "pointer"
 		},
 		{
-			"x": 11352.94197432656,
-			"y": 5417.73518111423,
+			"x": 6566.188831911735,
+			"y": 4795.771823615632,
 			"z": 0.05,
 			"meta": {},
 			"id": "camera:page:page",
@@ -74,37 +74,6 @@
 			"id": "instance_page_state:page:page",
 			"pageId": "page:page",
 			"typeName": "instance_page_state"
-		},
-		{
-			"x": -1979.6082340921857,
-			"y": -3431.068463584933,
-			"rotation": 0,
-			"isLocked": false,
-			"opacity": 1,
-			"meta": {},
-			"id": "shape:qDJKswFrFv7qMOGkmAfFo",
-			"type": "draw",
-			"props": {
-				"segments": [
-					{
-						"type": "free",
-						"path": "AAAAAAAAAAAAAAA/AAC1YwAAq9ZrZQAAa9kQZAAAldhAYgAAa9nlYAAAANl1XgAA1dVgXAAAK9RAWgAAK9SVWAAAANEAUQAAqs6rUgAArMqsSgAAAACqTgAAqs4AAAAAAACsSgAAqkoAAAAAq1IAAAAAlViA1wAAQF6g3QAAq2K74QAAHWQd5AAAEGS14wAAHWS14wAAS2N14gAAMGNQ4QAAMGPl4AAAhWF13gAARWCg3QAAYFyr1gAAlVjV1QAAq1arzgAAAFGqygAAq06rzgAAqkoAAAAAq06qygAAAACrzgAAq84AAAAAq9YAUQAAgNurVgAAtd+AWwAAteMAYQAAiOS7YQAAMOPlYAAAAOEVXwAAleArXAAA69/rWwAA4N6AWwAAdd7VWQAAoN2rVgAAgNurVgAAQNrVVQAA1dkAUQAAq9arUgAAK9QAAAAAq9IAAAAAANGrTgAAqsoAAAAAq84AAAAAq04AAAAAAFWsygAAK1gr1AAAAFmr0gAAFVsr1AAAQFor1AAA1Vkr1AAA1VmqzgAA1VmrzgAA1Vkr1AAAQFor1AAAFVsr1AAAgFsr1AAAYFyr1gAAgFsr2AAAAF2V2AAANV3V2QAANV1r2QAAAF2V2AAAYFyr1gAAgFur1gAAlVirzgAA1VWrzgAAAFWqzgAAK1SrzgAAq1IAAAAAAFEAAAAAAFEAAAAAAFEAAAAAq04AAAAAAFGqSgAAqkqsSgAAq06rUgAAAADVVQAAq9KAWwAAFdurXgAAAOHQYwAAZeOjZAAAkOIDZAAAdeJlYwAAy+CwYAAAFd/rXwAAdd7VXQAAYNzrWwAA69trWQAAQNorWAAAldirUgAAldgrVAAAq9arTgAAldgAAAAA1dWsygAAANWqzgAAq9ar0gAAldir0gAAANkr2AAAANkA2QAAq9rr2wAA1dlg3AAAa9k13QAAldgA3QAAldg13QAAK9Qr3AAAANGA2wAAq9LV2QAAANHV2QAAq87V2QAAqs7V2QAAAAAV2wAAANEr3AAAANEA3QAAK9QA3QAAANEA3QAAq84V2wAAK9TV2QAAq86r1gAAAAAr1AAAq84A1QAAAAAA0QAAqsoA0QAAAACr0gAAAACqygAAAACsygAAAACqzgAAAACsygAAq04AAAAA"
-					}
-				],
-				"color": "black",
-				"fill": "semi",
-				"dash": "draw",
-				"size": "m",
-				"isComplete": true,
-				"isClosed": false,
-				"isPen": false,
-				"scale": 1,
-				"scaleX": 1,
-				"scaleY": 1
-			},
-			"parentId": "page:page",
-			"index": "a1Dl6QVV",
-			"typeName": "shape"
 		},
 		{
 			"x": 0,
@@ -147,7 +116,7 @@
 			"screenBounds": {
 				"x": 0,
 				"y": 0,
-				"w": 1232,
+				"w": 1062,
 				"h": 566
 			},
 			"insets": [
