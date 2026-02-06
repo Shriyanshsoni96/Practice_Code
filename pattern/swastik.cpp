@@ -23,7 +23,6 @@ while(i<=n)
                 cout<<" *";
                 k++;
             }
-
         } 
        else if(i<=mid && j==1||j==mid)
        {
