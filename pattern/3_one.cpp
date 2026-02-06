@@ -6,21 +6,21 @@ i=1;
 cin>>n;
 while(i<=n){
     j=1;
-   
+   int mid=(n/2)+1;
     while(j<=n)
     {
-         if(i==1||i==n-1||j==1||j==n)
+         if(i==1 || j==1||i==n || j==n)
          {
-             cout<<"*";
+             cout<<" *";
         }
-        else if(i>1&&i<n-1&&j>1&&j<n-1)
-         {
-            cout<<"#";
-         }
-          else if(i==(n/2)+1 && j==(n/2)+1)
+        else if(i==mid && j==mid)
             {
-                cout<<"@";
+                cout<<" @";
             }
+        else 
+        {
+            cout<<" #";
+        }
          j++;
 }
     cout<<endl;
