@@ -8,6 +8,7 @@ int fibbo(int n){
     // recursion
     return fibbo(n-1)+fibbo(n-2);
 }
+
 int main() {
     int n;
     cin>>n;
