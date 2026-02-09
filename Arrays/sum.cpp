@@ -8,7 +8,7 @@ int i = 0 ;
 int sum=0;
 while(i<s)
 {
-    sum=sum+a[i];
+    sum+=a[i];
     i++;
 }
 cout<<sum;
