@@ -36,7 +36,8 @@ while(k<n)
 }
 if(flag)
 {
-    cout<<"value found at "<<tem<<" index";
+    cout<<"value found at "<<tem<<" index"<<endl;
+    cout<<"value found at "<<tem+1<<" position";
 }
 else{
     cout<<"Value is not present in the array";
