@@ -1,0 +1,11 @@
+# Ignore executable files
+*.exe
+
+# Ignore build folders
+build/
+
+# Ignore VS Code local settings
+.vscode/
+
+# Ignore temporary files
+*.log

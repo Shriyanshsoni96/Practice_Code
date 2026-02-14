@@ -1,7 +1,8 @@
 #include<iostream>
 using namespace std;
 int main() {
-int n,i ,j,k;
+int n,i ,j;
+cout<<"enter the no ";
 i=1;
 cin>>n;
 while(i<=n){
