@@ -1,14 +1,17 @@
-int original = n;
-int reverse = 0;
-  while(n!=0){
-       int digit = (n%10);
-         reverse = (reverse*10)+digit ;
-        n = n / 10;
+#include <iostream>
+using namespace std;
+int fibbo(int n){
+    // base case
+    if(n==0 or n==1){
+        return n;
     }
-    cout<<"The reverse of the number is : "<<reverse<<endl;
-    if(original==reverse){
-        cout<<"Palindrome"<<endl;
-    }
-    else{
-        cout<<"Not a Palindrome"<<endl;
-    }
+    // recursion
+    return fibbo(n-1)+fibbo(n-2);
+}
+
+int main() {
+    int n;
+    cin>>n;
+    cout<<fibbo(n)<<endl;
+    return 0;
+}
