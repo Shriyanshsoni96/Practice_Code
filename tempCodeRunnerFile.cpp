@@ -1,19 +1,32 @@
-#include <iostream>
-#include<vector>
+#include<iostream>
+
 using namespace std;
-int main() {
-int n ;
+int main(){
+int n;
 cin>>n;
-vector<int>a(n);
-for(int j = 0 ; j<n ;j++)
+int a[n];
+if(1 <=  n >=(5*104))
 {
-    cin>>a[j];
+    for(int i = 0 ;i<n ;i++)
+    {
+    cin>>a[i];
+    }
+    int count=1;
+    for (int i = 0; i < n; i++)
+    { 
+    for(int j = i+1 ; j < n ; j++ )
+    {
+       if(a[i]==a[j])
+       {
+        count++;
+       }
+    }
+    if(count>n/2)
+    {
+        cout<<a[i];
+    }
+    count=0;
 }
-int sum=0 ;
-for(int i =0 ; i<n; i++)
-{
-    sum+=a[i];
-    cout<<sum<<" ";
 }
-return 0 ;
+return 0;
 }
