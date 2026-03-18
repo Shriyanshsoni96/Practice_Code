@@ -82,6 +82,6 @@ int main() {
 
     cout << "After swap a: " << a << endl;   // Output: Banana
     cout << "After swap b: " << b << endl;   // Output: Apple
-
+    
     return 0;
 }
