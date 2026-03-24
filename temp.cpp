@@ -1,39 +1,17 @@
 #include <iostream>
+#include <vector>
+#include <numeric>
+#include <algorithm>
 using namespace std;
-
-int maxLen(string s, int k, char ch) {
-    int left = 0, count = 0, maxLength = 0;
-
-    for (int right = 0; right < s.size(); right++) {
-        // Count characters that need to be changed
-        if (s[right] != ch) {
-            count++;
-        }
-
-        // If more than k changes needed, shrink window
-        while (count > k) {
-            if (s[left] != ch) {
-                count--;
-            }
-            left++;
-        }
-
-        // Update maximum length
-        maxLength = max(maxLength, right - left + 1);
-    }
-
-    return maxLength;
+bool cmp(string a, string b) {
+    return a + b > b + a;
 }
-
 int main() {
-    int k;
-    cin >> k;
-
-    string s;
-    cin >> s;
-
-    int result = max(maxLen(s, k, 'a'), maxLen(s, k, 'b'));
-    cout << result;
-
+    vector<int> v ={7, 3, 5 ,4,1,10};
+    sort(v.begin(),v.end(),cmp);
+    for(int i = 0 ; i< v.size(); i++)
+    {
+        cout<<v[i];
+    }
     return 0;
 }

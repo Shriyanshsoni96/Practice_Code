@@ -19,6 +19,8 @@ using namespace std;
      return max;
     }
 int main(){
+    vector<int>n ={1,2,3,4,5};
+    cout<<maxSubArray(n);
 
 return 0;
 }
