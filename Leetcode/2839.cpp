@@ -14,8 +14,9 @@ bool check(string s1 , string s2 )
                if(s1 == s2) 
                {return true;
                 }
-                int temp = abs(j-1);
-               else if(j-i == 2 ){
+                int temp = abs(j-i);
+
+               if(temp == 2 ){
                         swap(s1[i],s1[j]);
                 }
         }
@@ -23,8 +24,8 @@ bool check(string s1 , string s2 )
     return  false;
 }
 int main(){
-string s1 ="abcd" ;
-string s2 ="cdbb" ;
+string s1 ="bnxw" ;
+string s2 ="bwxn" ;
 cout << boolalpha;
 cout<<check(s1,s2);
 return 0;
