@@ -1,4 +1,5 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 bool check(string s1 , string s2 )
 {  
@@ -7,21 +8,21 @@ bool check(string s1 , string s2 )
         return false;
     }   
 
-    for(int i = 0 ;i<s1.size();i++)
+    vector<int> s1_even(26, 0), s1_odd(26, 0), s2_even(26, 0), s2_odd(26, 0);
+    for(int i = 0; i < s1.size(); i++)
     {
-        for(int j = 0 ;j<s1.size();j++ )    
-        {       
-               if(s1 == s2) 
-               {return true;
-                }
-                int temp = abs(j-i);
-
-               if(temp == 2 ){
-                        swap(s1[i],s1[j]);
-                }
+        if(i % 2 == 0)
+        {
+            s1_even[s1[i] - 'a']++;
+            s2_even[s2[i] - 'a']++;
+        }
+        else
+        {
+            s1_odd[s1[i] - 'a']++;
+            s2_odd[s2[i] - 'a']++;
         }
     }
-    return  false;
+    return s1_even == s2_even && s1_odd == s2_odd;
 }
 int main(){
 string s1 ="bnxw" ;
