@@ -1,12 +1,11 @@
 #include<iostream>
 #include<vector>
+#include<algorithm>   
 using namespace std;
 
 int maxDistance(vector<int>& colors) {
     int n = colors.size();
-    
     int ans = 0;
-
     // compare with first element
     for(int i = n - 1; i >= 0; i--) {
         if(colors[i] != colors[0]) {
@@ -14,7 +13,6 @@ int maxDistance(vector<int>& colors) {
             break;
         }
     }
-
     // compare with last element
     for(int i = 0; i < n; i++) {
         if(colors[i] != colors[n - 1]) {
@@ -22,11 +20,11 @@ int maxDistance(vector<int>& colors) {
             break;
         }
     }
-
     return ans;
 }
+
 int main(){
-vector<int> colors ={1,1,1,6,1,1,1};
-cout<<maxDistance(colors);
-return 0;
+    vector<int> colors ={1,8,3,8,3};
+    cout<<maxDistance(colors);
+    return 0;
 }
