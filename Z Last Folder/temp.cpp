@@ -1,31 +1,14 @@
 #include<iostream>
-#include<numeric>
-#include<algorithm>
-#include<vector>
 using namespace std;
 
-int main(){
-vector<int> arr={10,20,30,40};
-int k = 2; 
-
-int sum = accumulate(arr.begin(),arr.end(),0);
-int right= sum ;
-int left = *max(arr.begin(),arr.end());
-int ans = 0 ;
-while(left<right)
+int firstOccurrence(int a[], int n, int t, int i)
 {
-    int mid= left+ (right-left)/2;
-    if(ispossible(k , arr, mid))
-    {
-        ans= mid;
-        right = mid-1;
-    }
-    else
-    {
-        
-        left = mid+1; 
-    }
+    if(i == n) return -1;
+    if(a[i] == t) return i;
+    return firstOccurrence(a, n, t, i + 1);
 }
-
-return 0;
+int main()
+{
+    int a[] = {1, 3, 4, 5, 3};
+    cout << firstOccurrence(a, 5, 3, 0);
 }
